@@ -3,7 +3,6 @@ l1=([1,2,3,4,5])
 n1=np.array(l1)
 print(n1)
 print(type(n1))
-import numpy
 n1=np.zeros((2,4))
 print(n1)
 

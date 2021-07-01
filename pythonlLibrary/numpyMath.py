@@ -1,5 +1,5 @@
 import numpy as np
-import random
+
 n1=np.random.randint(10,50,10)
 print(n1)
 print(np.std(n1))

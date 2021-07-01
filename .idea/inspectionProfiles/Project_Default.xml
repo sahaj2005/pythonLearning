@@ -1,0 +1,38 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="SmartCalculator.tkinter" />
+          <option value="tkinter" />
+          <option value="pythonlLibrary.test.Entry" />
+          <option value="pythonlLibrary.test.Button" />
+          <option value="pythonlLibrary.test.stringVar" />
+          <option value="pythonlLibrary.test.*" />
+          <option value="SmartCalculator.*" />
+          <option value="messagebox" />
+          <option value="math" />
+          <option value="cxFreezeFile.freeze" />
+          <option value="cx" />
+          <option value="cx_freeze" />
+          <option value="cx_Freeze" />
+          <option value="cxFreezeFile.includefiles" />
+          <option value="cxFreezeFile.Executable" />
+          <option value="cxFreezeFile.*" />
+          <option value="sys" />
+          <option value="SmartcalculatorSet.setup" />
+          <option value="testset.executables" />
+          <option value="testset.base" />
+          <option value="testset.setup" />
+          <option value="SmartcalculatorSet.*" />
+          <option value="testset.executaible" />
+          <option value="typingSpeedGame.*" />
+          <option value="random" />
+          <option value="spellingTest.*" />
+          <option value="QRcode.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
