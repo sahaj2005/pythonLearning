@@ -2,27 +2,32 @@ from tkinter import*
 from tkinter import messagebox
 import qrcode
 
+
+
 screen=Tk()
 screen.title('QR code')
 screen.maxsize(width=450,height=250)
 screen.minsize(width=465,height=250)
-screen.configure(bg='blue')
+screen.configure(bg='powder blue')
 
 def generate():
    name= Name_entry_box.get()
    id=ID_entery_box.get()
    message=Message_entery_box.get()
-   detail='name:'+name+'\n'+'Id:'+id+'\n'+'message:'+message
-   img = qrcode.make(detail)
-   type(img)
-   img.save("QR code.png")
+   web=website2.get()
+   detail='name:'+name+'\n'+'Id:'+id+'\n'+'message:'+message+'\n'+'mail:sahajdeep8949@gmail.com''\n'+'website'+web
+   qr = qrcode.QRCode(
+       version=1,
+       box_size=10,
+       border=5)
+   qr.add_data(detail,text)
+   qr.make(fit=True)
+   img = qr.make_image(fill='black', back_color='white',)
+   img.save('QR code2.png')
 
-
-
-
-
-
-
+#img = qrcode.make(detail)
+   #type(img)
+   #img.save("QR code.png")
 
 
 
@@ -39,6 +44,7 @@ def clean():
     Name_entry_box.delete(0,END)
     ID_entery_box.delete(0,END)
     Message_entery_box.delete(0,END)
+    website.delete(0,END)
 def on_leavegenerate(s):
     generate.configure(bg='pink')
 def on_entergenerate(s):
@@ -66,12 +72,17 @@ QR_Name_label.place(x=20,y=80)
 QR_Message_label=Label(screen,text='Enter Your message',font=('arial',13,'italic bold'),bg='powder blue',fg='red',width=17)
 QR_Message_label.place(x=20,y=120)
 
-#QR_notifaction_label=Label(text='notification :',font=('arial',13,'italic bold'),bg='powder blue',fg='red',width=17)
-#QR_notifaction_label.place(x=20,y=220)
-#notifaction_box=Label(screen,text=notification,font=('arial',13,'italic bold'),bg='pink',width=27,)
-#notifaction_box.place(x=210,y=220)
+website=Label(text=' website:',font=('arial',13,'italic bold'),bg='powder blue',fg='red',width=17)
+website.place(x=20,y=220)
+
+#website=Label(screen,text=notification,font=('arial',13,'italic bold'),bg='pink',width=27,)
+#website.place(x=210,y=220)
 
 ###################################
+
+website2=Entry(screen,text='',font=('arial',15,'italic bold'),bg='pink',width=22,bd=5)
+website2.place(x=210,y=220)
+
 ID_entery_box=Entry(screen,font=('arial',10,'italic bold'),bg='pink',bd=5,width=23)
 ID_entery_box.place(x=280,y=40)
 
@@ -82,6 +93,9 @@ Message_entery_box=Entry(screen,font=('arial',10,'italic bold'),bg='pink',bd=5,w
 Message_entery_box.place(x=280,y=120)
 
 ########################
+
+
+
 generate=Button(screen,text='Generate',font=('arial',10,' bold'),bg='pink',bd=5,width=10,command=generate)
 generate.place(x=30,y=170)
 
