@@ -40,6 +40,44 @@
           <option value="QRcode.*" />
           <option value="pyqrcode" />
           <option value="qrcode" />
+          <option value="os" />
+          <option value="shutil" />
+          <option value="subprocess" />
+          <option value="threading" />
+          <option value="shlex" />
+          <option value="website.*" />
+          <option value="glob" />
+          <option value="pwd" />
+          <option value="socket" />
+          <option value="tempfile" />
+          <option value="getopt" />
+          <option value="webbrowser" />
+          <option value="myqr" />
+          <option value="musicsystem.Tk" />
+          <option value="AllcolorBox.Tk" />
+          <option value="AllcolorBox.Label" />
+          <option value="AllcolorBox.W" />
+          <option value="AllcolorBox.E" />
+          <option value="musicsystem.Label" />
+          <option value="musicsystem.Entry" />
+          <option value="musicsystem.Button" />
+          <option value="musicsystem.stringVar" />
+          <option value="musicsystem.RIGHT" />
+          <option value="musicsystem.StringVar" />
+          <option value="musicsystem.mixer" />
+          <option value="musicsystem.piagame" />
+          <option value="musicsystem.pygame" />
+          <option value="musicsystem.sound" />
+          <option value="musicsystem.music" />
+          <option value="musicsystem.mute_button" />
+          <option value="pygame" />
+          <option value="musicsystem.audiolebal" />
+          <option value="musicsystem.VERTICAL" />
+          <option value="progressbar" />
+          <option value="ttk" />
+          <option value="musicsystem.HORIZANTAL" />
+          <option value="musicsystem.*" />
+          <option value="datetime" />
         </list>
       </option>
     </inspection_tool>

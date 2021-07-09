@@ -182,7 +182,7 @@ def on_enterlog(s):
     btndivi.configure(bg='orange')
 
 
-tex=StringVar()
+tex=SstringVar()
 operator=''
 
 entry1=Entry(screen,bg='powder blue',font=('arial' ,20),bd=30,justify='right',textvariable=tex)
